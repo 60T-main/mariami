@@ -40,6 +40,10 @@ body {
   overflow-x: hidden;
 }
 
+body.intro-locked {
+  overflow: hidden;
+}
+
 /* ─── CUSTOM SCROLLBAR ─── */
 ::-webkit-scrollbar         { width: 6px; }
 ::-webkit-scrollbar-track   { background: var(--pink-pale); }
@@ -49,6 +53,45 @@ body {
 /* ─── DESKTOP NOTICE (hidden on mobile) ─── */
 .desktop-notice {
   display: none;
+}
+
+/* ─── BALLOON INTRO LAYER ─── */
+#balloon-layer {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  pointer-events: none;
+  overflow: hidden;
+  transition: opacity 0.8s ease;
+}
+
+#balloon-layer.fade-out {
+  opacity: 0;
+}
+
+.heart-balloon {
+  position: absolute;
+  bottom: -160px;
+  left: var(--b-x, 50%);
+  width: var(--b-size, 70px);
+  height: calc(var(--b-size, 70px) * 1.5);
+  display: block;
+  animation: balloon-rise var(--b-dur, 3.2s) ease-in var(--b-delay, 0s) both;
+}
+
+@keyframes balloon-rise {
+  0%   { transform: translateY(0) rotate(var(--b-tilt, 0deg)); }
+  100% { transform: translateY(calc(-100vh - 320px)) rotate(var(--b-tilt, 0deg)); }
+}
+
+/* ─── INTRO REVEAL ─── */
+[data-reveal] {
+  opacity: 0;
+}
+
+[data-reveal].revealed {
+  opacity: 1;
+  transition: opacity 0.8s ease;
 }
 
 /* ─── SITE WRAP ─── */
@@ -65,7 +108,7 @@ body {
   pointer-events: none;
   user-select: none;
   z-index: 10;
-  top: calc(100vh - 4%);
+  top: calc(100vh - -3.5%);
 }
 
 
@@ -209,7 +252,7 @@ animation: float-bob 12.8s ease-in-out infinite;
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 14rem;
+  max-width: 20rem;
   animation: float-cloud 10s ease-in-out infinite;
   margin-right: 1.3rem;
 }

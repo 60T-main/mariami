@@ -5,8 +5,117 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>მარიამის დაბადების დღე</title>
         <link rel="stylesheet" href="style.css">
+        <script type="module" src="https://cdn.jsdelivr.net/npm/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"></script>
     </head>
     <body>
+        <!-- ═══ HEART BALLOON INTRO LAYER ═══ -->
+        <div id="balloon-layer" aria-hidden="true">
+            <dotlottie-player
+                class="heart-balloon"
+                style="--b-x:4%;--b-size:120px;--b-delay:0s;--b-dur:3.1s;--b-tilt:-4deg"
+                src="Heart Baloon.lottie"
+                autoplay
+                loop
+            ></dotlottie-player>
+            <dotlottie-player
+                class="heart-balloon"
+                style="--b-x:13%;--b-size:90px;--b-delay:0.4s;--b-dur:3.6s;--b-tilt:3deg"
+                src="Heart Baloon.lottie"
+                autoplay
+                loop
+            ></dotlottie-player>
+            <dotlottie-player
+                class="heart-balloon"
+                style="--b-x:22%;--b-size:140px;--b-delay:0.1s;--b-dur:2.9s;--b-tilt:-2deg"
+                src="Heart Baloon.lottie"
+                autoplay
+                loop
+            ></dotlottie-player>
+            <dotlottie-player
+                class="heart-balloon"
+                style="--b-x:33%;--b-size:100px;--b-delay:0.6s;--b-dur:3.4s;--b-tilt:5deg"
+                src="Heart Baloon.lottie"
+                autoplay
+                loop
+            ></dotlottie-player>
+            <dotlottie-player
+                class="heart-balloon"
+                style="--b-x:42%;--b-size:125px;--b-delay:0.2s;--b-dur:3.9s;--b-tilt:-3deg"
+                src="Heart Baloon.lottie"
+                autoplay
+                loop
+            ></dotlottie-player>
+            <dotlottie-player
+                class="heart-balloon"
+                style="--b-x:51%;--b-size:108px;--b-delay:0.5s;--b-dur:3.2s;--b-tilt:2deg"
+                src="Heart Baloon.lottie"
+                autoplay
+                loop
+            ></dotlottie-player>
+            <dotlottie-player
+                class="heart-balloon"
+                style="--b-x:62%;--b-size:132px;--b-delay:0s;--b-dur:2.8s;--b-tilt:-5deg"
+                src="Heart Baloon.lottie"
+                autoplay
+                loop
+            ></dotlottie-player>
+            <dotlottie-player
+                class="heart-balloon"
+                style="--b-x:72%;--b-size:95px;--b-delay:0.7s;--b-dur:3.5s;--b-tilt:4deg"
+                src="Heart Baloon.lottie"
+                autoplay
+                loop
+            ></dotlottie-player>
+            <dotlottie-player
+                class="heart-balloon"
+                style="--b-x:80%;--b-size:115px;--b-delay:0.3s;--b-dur:3.7s;--b-tilt:-2deg"
+                src="Heart Baloon.lottie"
+                autoplay
+                loop
+            ></dotlottie-player>
+            <dotlottie-player
+                class="heart-balloon"
+                style="--b-x:89%;--b-size:98px;--b-delay:0.1s;--b-dur:2.7s;--b-tilt:3deg"
+                src="Heart Baloon.lottie"
+                autoplay
+                loop
+            ></dotlottie-player>
+            <dotlottie-player
+                class="heart-balloon"
+                style="--b-x:8%;--b-size:82px;--b-delay:1.0s;--b-dur:4.1s;--b-tilt:6deg"
+                src="Heart Baloon.lottie"
+                autoplay
+                loop
+            ></dotlottie-player>
+            <dotlottie-player
+                class="heart-balloon"
+                style="--b-x:27%;--b-size:104px;--b-delay:0.8s;--b-dur:3.8s;--b-tilt:-6deg"
+                src="Heart Baloon.lottie"
+                autoplay
+                loop
+            ></dotlottie-player>
+            <dotlottie-player
+                class="heart-balloon"
+                style="--b-x:45%;--b-size:148px;--b-delay:0.2s;--b-dur:3.3s;--b-tilt:2deg"
+                src="Heart Baloon.lottie"
+                autoplay
+                loop
+            ></dotlottie-player>
+            <dotlottie-player
+                class="heart-balloon"
+                style="--b-x:58%;--b-size:126px;--b-delay:0.9s;--b-dur:3.0s;--b-tilt:-3deg"
+                src="Heart Baloon.lottie"
+                autoplay
+                loop
+            ></dotlottie-player>
+            <dotlottie-player
+                class="heart-balloon"
+                style="--b-x:77%;--b-size:90px;--b-delay:0.4s;--b-dur:4.2s;--b-tilt:4deg"
+                src="Heart Baloon.lottie"
+                autoplay
+                loop
+            ></dotlottie-player>
+        </div>
         <!-- Desktop notice -->
         <div class="desktop-notice" id="desktopNotice">
             <img src="weddsite.png" alt="Weddsite" class="desktop-notice__logo">
@@ -19,6 +128,7 @@
                 src="flowers-bottom.png"
                 alt=""
                 aria-hidden="true"
+                data-reveal="6"
             >
             <!-- ═══ HERO ═══ -->
             <section class="hero" id="hero">
@@ -28,12 +138,14 @@
                     src="flowers-top-left.png"
                     alt=""
                     aria-hidden="true"
+                    data-reveal="2"
                 >
                 <img
                     class="deco flowers-tr"
                     src="flowers-top-right.png"
                     alt=""
                     aria-hidden="true"
+                    data-reveal="2"
                 >
                 <!-- Crown -->
                 <img
@@ -41,6 +153,7 @@
                     src="crown.png"
                     alt=""
                     aria-hidden="true"
+                    data-reveal="1"
                 >
                 <!-- Side characters -->
                 <img
@@ -48,18 +161,21 @@
                     src="unicorn.png"
                     alt=""
                     aria-hidden="true"
+                    data-reveal="3"
                 >
                 <img
                     class="deco castle"
                     src="castle.png"
                     alt=""
                     aria-hidden="true"
+                    data-reveal="3"
                 >
                 <img
                     class="deco butterflies"
                     src="butterflys-right.png"
                     alt=""
                     aria-hidden="true"
+                    data-reveal="4"
                 >
                 <!-- Side detail decorations -->
                 <img
@@ -67,12 +183,14 @@
                     src="design-lower-left.png"
                     alt=""
                     aria-hidden="true"
+                    data-reveal="4"
                 >
                 <img
                     class="deco deco-right"
                     src="design-lower-right.png"
                     alt=""
                     aria-hidden="true"
+                    data-reveal="4"
                 >
                 <!-- Wand & Balloons -->
                 <img
@@ -80,29 +198,41 @@
                     src="wand.png"
                     alt=""
                     aria-hidden="true"
+                    data-reveal="5"
                 >
                 <img
                     class="deco balloons"
                     src="baloons-right.png"
                     alt=""
                     aria-hidden="true"
+                    data-reveal="5"
                 >
                 <!-- Main content -->
                 <div class="hero-content">
                     <!-- Photo + age float together -->
-                    <div class="hero-float">
+                    <div class="hero-float" data-reveal="7">
                         <img class="mariami-photo" src="mariami.png" alt="მარიამი">
                     </div>
-                    <img class="candle" src="candle.png" alt="">
-                    <h1 class="hero-name">მარიამი</h1>
-                    <p class="hero-invite">გეპატიჟებათ დაბადების დღეზე</p>
-                    <div class="kids-dream">
+                    <img
+                        class="candle"
+                        src="candle.png"
+                        alt=""
+                        data-reveal="8"
+                    >
+                    <h1 class="hero-name" data-reveal="9">მარიამი</h1>
+                    <p class="hero-invite" data-reveal="10">გეპატიჟებათ დაბადების დღეზე</p>
+                    <div class="kids-dream" data-reveal="11">
                         <img src="kids-dream.png" alt="">
                     </div>
-                    <p class="hero-date">30 აპრილი</p>
+                    <p class="hero-date" data-reveal="12">30 აპრილი</p>
                 </div>
                 <!-- Sparkle container -->
-                <div class="sparkles" id="sparkles" aria-hidden="true"></div>
+                <div
+                    class="sparkles"
+                    id="sparkles"
+                    aria-hidden="true"
+                    data-reveal="12"
+                ></div>
             </section>
             <!-- ═══ PROGRAM ═══ -->
             <section class="program" id="program">
