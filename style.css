@@ -21,7 +21,6 @@
 
 a, .a {
     text-decoration: none;
-
 }
 
 /* ─── VARIABLES ─── */
@@ -258,7 +257,6 @@ animation: float-bob 12.8s ease-in-out infinite;
   height: auto;
   object-fit: contain;
   display: block;
-  filter: drop-shadow(0 6px 14px rgba(180, 60, 100, 0.18));
 }
 
 /* Balloon-style "5" */
