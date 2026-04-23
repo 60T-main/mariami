@@ -79,6 +79,7 @@ body.intro-locked {
   animation: balloon-rise var(--b-dur, 3.2s) ease-in var(--b-delay, 0s) both;
 }
 
+
 @keyframes balloon-rise {
   0%   { transform: translateY(0) rotate(var(--b-tilt, 0deg)); }
   100% { transform: translateY(calc(-100vh - 320px)) rotate(var(--b-tilt, 0deg)); }
@@ -310,6 +311,27 @@ animation: float-cloud 12s ease-in-out infinite;
   letter-spacing: 4px;
   text-align: center;
 animation: float-cloud 12s ease-in-out infinite;
+}
+.hero-time {
+  font-family: 'SS GEO Brain Melt', serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--rose);
+  margin-top: 8px;
+  letter-spacing: 4px;
+  text-align: center;
+animation: float-cloud 12s ease-in-out infinite;
+}
+.hero-address {
+
+  font-size: 14px;
+color: var(--rose);
+animation: float-cloud 12s ease-in-out infinite;
+margin-top: 3px;
+    letter-spacing: 4px;
+    text-align: center;
+    font-family: 'SS GEO Brain Melt', serif;
+
 }
 
 /* ─── SPARKLES ─── */
