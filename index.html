@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ka">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>მარიამის დაბადების დღე</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- Desktop notice -->
+        <div class="desktop-notice" id="desktopNotice">
+            <img src="weddsite.png" alt="Weddsite" class="desktop-notice__logo">
+            <p>გთხოვთ, გახსენით მობილური ტელეფონიდან</p>
+        </div>
+        <div class="site-wrap">
+            <!-- flowers-br sits outside hero/program so it bleeds across both -->
+            <img
+                class="flowers-br-bleed"
+                src="flowers-bottom.png"
+                alt=""
+                aria-hidden="true"
+            >
+            <!-- ═══ HERO ═══ -->
+            <section class="hero" id="hero">
+                <!-- Corner flowers -->
+                <img
+                    class="deco flowers-tl"
+                    src="flowers-top-left.png"
+                    alt=""
+                    aria-hidden="true"
+                >
+                <img
+                    class="deco flowers-tr"
+                    src="flowers-top-right.png"
+                    alt=""
+                    aria-hidden="true"
+                >
+                <!-- Crown -->
+                <img
+                    class="deco crown"
+                    src="crown.png"
+                    alt=""
+                    aria-hidden="true"
+                >
+                <!-- Side characters -->
+                <img
+                    class="deco unicorn"
+                    src="unicorn.png"
+                    alt=""
+                    aria-hidden="true"
+                >
+                <img
+                    class="deco castle"
+                    src="castle.png"
+                    alt=""
+                    aria-hidden="true"
+                >
+                <img
+                    class="deco butterflies"
+                    src="butterflys-right.png"
+                    alt=""
+                    aria-hidden="true"
+                >
+                <!-- Side detail decorations -->
+                <img
+                    class="deco vine-left"
+                    src="design-lower-left.png"
+                    alt=""
+                    aria-hidden="true"
+                >
+                <img
+                    class="deco deco-right"
+                    src="design-lower-right.png"
+                    alt=""
+                    aria-hidden="true"
+                >
+                <!-- Wand & Balloons -->
+                <img
+                    class="deco wand"
+                    src="wand.png"
+                    alt=""
+                    aria-hidden="true"
+                >
+                <img
+                    class="deco balloons"
+                    src="baloons-right.png"
+                    alt=""
+                    aria-hidden="true"
+                >
+                <!-- Main content -->
+                <div class="hero-content">
+                    <!-- Photo + age float together -->
+                    <div class="hero-float">
+                        <img class="mariami-photo" src="mariami.png" alt="მარიამი">
+                    </div>
+                    <img class="candle" src="candle.png" alt="">
+                    <h1 class="hero-name">მარიამი</h1>
+                    <p class="hero-invite">გეპატიჟებათ დაბადების დღეზე</p>
+                    <div class="kids-dream">
+                        <img src="kids-dream.png" alt="">
+                    </div>
+                    <p class="hero-date">30 აპრილი</p>
+                </div>
+                <!-- Sparkle container -->
+                <div class="sparkles" id="sparkles" aria-hidden="true"></div>
+            </section>
+            <!-- ═══ PROGRAM ═══ -->
+            <section class="program" id="program">
+                <!-- Reused decorations — different positions -->
+                <img
+                    class="prog-deco prog-butterflies"
+                    src="butterflys-right.png"
+                    alt=""
+                    aria-hidden="true"
+                >
+                <img
+                    class="prog-deco prog-wand"
+                    src="wand.png"
+                    alt=""
+                    aria-hidden="true"
+                >
+                <img
+                    class="prog-deco prog-balloons"
+                    src="baloons-left.png"
+                    alt=""
+                    aria-hidden="true"
+                >
+                <img
+                    class="prog-deco prog-vine-l"
+                    src="design-lower-left.png"
+                    alt=""
+                    aria-hidden="true"
+                >
+                <img
+                    class="prog-deco prog-vine-r"
+                    src="design-lower-right.png"
+                    alt=""
+                    aria-hidden="true"
+                >
+                <!-- Carriage bottom-center -->
+                <img
+                    class="prog-deco prog-carriage"
+                    src="carriage.png"
+                    alt=""
+                    aria-hidden="true"
+                >
+                <img
+                    class="prog-deco prog-flower-bl"
+                    src="flowers-bottom-left.png"
+                    alt=""
+                    aria-hidden="true"
+                >
+                <img
+                    class="prog-deco prog-flower-br"
+                    src="flowers-bottom-right.png"
+                    alt=""
+                    aria-hidden="true"
+                >
+                <img
+                    class="prog-deco prog-carriage"
+                    src="carriage.png"
+                    alt=""
+                    aria-hidden="true"
+                >
+                <div class="program-inner">
+                    <h2 class="program-title">✦ პროგრამა ✦</h2>
+                    <div class="program-list">
+                        <!-- 1 -->
+                        <div
+                            class="prog-item"
+                            data-modal="bubbles"
+                            role="button"
+                            tabindex="0"
+                        >
+                            <img class="prog-img" src="bubles.png" alt="ბუშტების გუმბათი">
+                            <span class="prog-label">ბუშტების გუმბათი</span>
+                        </div>
+                        <!-- 2 — reversed -->
+                        <div
+                            class="prog-item prog-item--rev"
+                            data-modal="laser"
+                            role="button"
+                            tabindex="0"
+                        >
+                            <img class="prog-img prog-img--fairies" src="fairies.png" alt="ლაზერ ფერია შოუ">
+                            <span class="prog-label">ლაზერ ფერია შოუ</span>
+                        </div>
+                        <!-- 3 -->
+                        <div
+                            class="prog-item"
+                            data-modal="face"
+                            role="button"
+                            tabindex="0"
+                        >
+                            <img class="prog-img prog-img--paint" src="paint.png" alt="სახეზე ხატვა">
+                            <span class="prog-label">სახეზე ხატვა</span>
+                        </div>
+                        <!-- 4 — reversed -->
+                        <div
+                            class="prog-item prog-item--rev"
+                            data-modal="balloons"
+                            role="button"
+                            tabindex="0"
+                        >
+                            <img class="prog-img prog-img--fairies" src="baloons-left.png" alt="ბუშტების შოუ">
+                            <span class="prog-label">ბუშტების შოუ</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ═══ FOOTER ═══ -->
+            <footer class="site-footer">
+                <a
+                    class="footer-credit"
+                    href="https://www.instagram.com/weddsites/"
+                    target="_blank"
+                    rel="noopener"
+                >
+                    <img src="logo-weddsite.png" alt="Weddsite" class="footer-logo">
+                    <span>Made with ♥ by Weddsite</span>
+                </a>
+            </footer>
+        </div>
+        <!-- ═══ PROGRAM MODALS ═══ -->
+        <div class="modal-overlay" id="modalOverlay" aria-hidden="true">
+            <div
+                class="modal-box"
+                id="modalBox"
+                role="dialog"
+                aria-modal="true"
+            >
+                <button class="modal-close" id="modalClose" aria-label="დახურვა">✕</button>
+                <img
+                    class="modal-img"
+                    id="modalImg"
+                    src=""
+                    alt=""
+                >
+                <h3 class="modal-title" id="modalTitle"></h3>
+                <p class="modal-body" id="modalBody"></p>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
