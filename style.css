@@ -65,7 +65,7 @@ body {
   pointer-events: none;
   user-select: none;
   z-index: 10;
-  top: calc(100vh - 2%);
+  top: calc(100vh - 4%);
 }
 
 
