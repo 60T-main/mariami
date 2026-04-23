@@ -99,17 +99,7 @@ body.intro-locked {
   position: relative;
 }
 
-/* Bottom flowers — lives in site-wrap, bleeds across hero/program boundary */
-.flowers-br-bleed {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-  pointer-events: none;
-  user-select: none;
-  z-index: 10;
-  top: calc(100vh - -3.5%);
-}
+
 
 
 
@@ -375,10 +365,25 @@ animation: float-cloud 12s ease-in-out infinite;
   50%       { opacity: 0.9; transform: scale(1)   rotate(180deg); }
 }
 
+
+
+/* Bottom flowers — lives in site-wrap, bleeds across hero/program boundary */
+.flowers-br-bleed {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    pointer-events: none;
+    user-select: none;
+    z-index: 10;
+    top: -8%;
+}
+
 /* ─── PROGRAM SECTION ─── */
 .program {
   position: relative;
-  overflow: hidden;
+  overflow-y: visible;
+  overflow-x: clip;
   background-image: url('bg.png');
   background-size: cover;
   background-position: center center;
